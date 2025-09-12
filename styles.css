@@ -158,6 +158,16 @@ ul {
   text-align: left;
 }
 
+.time-text {
+  display: flex;
+  justify-content: space-between; /* pushes left and right */
+  align-items: center;           /* keeps them vertically aligned */
+}
+
+.date {
+  font-style: italic; /* optional */
+}
+
 /* Contact me section */
 
 .fa {

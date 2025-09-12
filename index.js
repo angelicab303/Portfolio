@@ -2,12 +2,12 @@ var app = document.getElementById('app');
 
 
 var typewriter = new Typewriter(app, {
-  loop: true,
+  loop: false,
   delay: 75,
 });
 
 typewriter
-  .pauseFor(1000)
+  // .pauseFor(500)
   .typeString('Cornell CS grad. Builder. Storyteller. Always creating something new.') //Add your own tagline
   .pauseFor(3000)
   .start()
@@ -18,16 +18,22 @@ var granimInstance = new Granim({
     direction: 'top-bottom',
     isPausedWhenNotInView: true,
     image : {
-        source: 'assets/snow.jpg', //change image for intro section if desired
+        source: 'assets/CornellBackdrop.jpg', //change image for intro section if desired
         blendingMode: 'multiply',
     },
     states : {
         "default-state": {
+            // gradients: [
+            //     ['#29323c', '#485563'],
+            //     ['#FF6B6B', '#556270'],
+            //     ['#80d3fe', '#7ea0c4'],
+            //     ['#f0ab51', '#eceba3']
+            // ],
             gradients: [
-                ['#29323c', '#485563'],
-                ['#FF6B6B', '#556270'],
-                ['#80d3fe', '#7ea0c4'],
-                ['#f0ab51', '#eceba3']
+                [
+                  // '#556270'
+                  '#7ea0c4'
+                ]
             ],
             transitionSpeed: 8000
         }
